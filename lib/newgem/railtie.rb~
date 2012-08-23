@@ -6,7 +6,7 @@ module Newgem
       railtie_name :yaml_config
 
       rake_tasks do
-        load 'newgem.rb'
+        load 'tasks/heroku-yaml_config.rake'
       end
     end
   end
