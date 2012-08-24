@@ -1,5 +1,6 @@
 require "newgem/version"
 require "rails"
+require 'newgem/railtie' if defined?(Rails)
 
 module Newgem
   class GenGenerator < Rails::Generators::Base

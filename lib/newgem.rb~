@@ -1,4 +1,5 @@
 require "newgem/version"
+require "rails"
 
 module Newgem
   class GenGenerator < Rails::Generators::Base

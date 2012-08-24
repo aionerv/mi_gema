@@ -1,13 +1,8 @@
-require 'newgem'
-require 'rails'
-module Newgem
-  module YamlConfig
-    class Railtie < Rails::Railtie
-      railtie_name :yaml_config
-
-      rake_tasks do
-        load 'tasks/heroku-yaml_config.rake'
-      end
-    end
+# lib/newgem/railtie.rb
+module NewGem
+  class Railtie < Rails::Railtie
   end
 end
+
+# lib/my_gem.rb
+require 'newgem/railtie' if defined?(Rails)
