@@ -3,6 +3,3 @@ module NewGem
   class Railtie < Rails::Railtie
   end
 end
-
-# lib/my_gem.rb
-require 'newgem/railtie' if defined?(Rails)
