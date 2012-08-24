@@ -1,7 +1,7 @@
 require 'rails/generators/active_record'
 
 class GenGenerator < Rails::Generators::Base
-  source_root File.expand_path('../templates', __FILE__)
+  source_root File.expand_path('rails/generators/gen/templates', __FILE__)
 
   def generate_holamundo
     copy_file "hola_mundo.css", "app/assets/stylesheets/hola_mundo.css"
