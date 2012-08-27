@@ -10,4 +10,12 @@ module Newgem
       template "hola_mundo.css", "app/assets/stylesheets/hola_mundo.css"  
     end
   end
+  
+  class PaperclipGenerator < Rails::Generators::Base
+  source_root File.expand_path('../templates', __FILE__)
+  
+    def configfiles
+      template "s3.yml", "config/s3.yml"
+    end
+  end
 end
