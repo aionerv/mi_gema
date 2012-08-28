@@ -16,6 +16,8 @@ module Newgem
   
     def configfiles
       template "s3.yml", "config/s3.yml"
+      template "paperclip.yml", "config/paperclip.yml"
+      template "paperclip.rb", "config/initializers/paperclip.rb"
     end
   end
 end

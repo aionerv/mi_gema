@@ -5,5 +5,7 @@ class PaperGenerator < Rails::Generators::Base
   
   def generate_configfiles
     copy_file "s3.yml", "config/s3.yml"
+    copy_file "paperclip.yml", "config/paperclip.yml"
+    copy_file "paperclip.rb", "config/initializers/paperclip.rb"
   end
 end
