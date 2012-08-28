@@ -1,5 +1,6 @@
 require "newgem/version"
 require "rails"
+require 'rails/generators'
 require 'newgem/railtie' if defined?(Rails)
 
 module Newgem
